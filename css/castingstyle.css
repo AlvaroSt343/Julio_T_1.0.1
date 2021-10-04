@@ -1,0 +1,48 @@
+.titulo-caston{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4vh;
+    line-height: 2.9vh;
+    text-transform: uppercase;
+    color: #3B3B3B;
+}
+.subtitulo-caston{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vh;
+    line-height: 2.3vh;
+    color: #6C6C6C;
+}
+.subsform{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vh;
+    line-height: 3vh;
+    text-transform: uppercase;
+    color: #3B3B3B;
+}
+.notif{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.9vh;
+    line-height: 2vh;
+    color: #3B3B3B;
+}
+.btnfinalizar{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vh;
+    line-height: 5vh;
+    color: #FFFFFF;
+    border: none;
+    background: #2176F0;
+    box-shadow: 0px 0px 16px rgba(33, 118, 240, 0.56);
+    border-radius: 10px;
+    padding-left: 7vh;
+    padding-right: 7vh;
+}
