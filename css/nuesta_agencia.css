@@ -1,0 +1,100 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+.na_titulo1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4vh;
+  line-height: 3.4vh;
+  text-transform: uppercase;
+  color: #000000;
+}
+.na_titulo2 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.5vh;
+  line-height: 7vh;
+  text-transform: uppercase;
+  color: #101010;
+}
+.na_contenido {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 3.4vh;
+  text-align: justify;
+  color: #6a6a6a;
+}
+.na_subtitulo {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vh;
+  line-height: 3.4vh;
+  text-align: justify;
+  color: #000000;
+}
+.parrafos {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vh;
+  line-height: 3.4vh;
+  text-align: justify;
+  color: #6a6a6a;
+}
+.enlaces {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vh;
+  line-height: 3.4vh;
+  text-align: justify;
+}
+.telefonos {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vh;
+  line-height: 3.4vh;
+  text-align: justify;
+  color: #6a6a6a;
+}
+
+.comillas {
+  font-family: Pragati Narrow;
+  font-size: 5vh;
+  text-align: justify;
+  color: rgba(106, 106, 106, 0.2);
+}
+.cita {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 3.5vh;
+  text-align: justify;
+  color: #6a6a6a;
+}
+
+.imgleft_quienessomos{
+    position: relative;
+    right: 4vh;
+    top: 20vh;
+}
+.imgleft_comotrabajamos{
+    position: relative;
+    top: 22.5vh;
+    left: -5vh;
+}
+
+@media (max-width: 500px) {
+    .imgcelular{
+        width: 100%;
+    }
+}
