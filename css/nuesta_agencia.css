@@ -93,8 +93,20 @@ body {
     left: -5vh;
 }
 
+.imgleft_porquejulio{
+    position: relative;
+    top: 26vh;
+    left: -4vh; 
+}
+.imgleft_nuestros{
+    position: relative;
+    top: 27vh;
+    left: -4vh; 
+}
+
 @media (max-width: 500px) {
-    .imgcelular{
+    .imgcelular, .imgsillas{
         width: 100%;
     }
+    
 }
