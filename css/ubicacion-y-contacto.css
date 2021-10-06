@@ -37,9 +37,97 @@
   color: #6a6a6a;
 }
 
+.ubi_titulo {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vh;
+  line-height: 5vh;
+  text-transform: uppercase;
+  color: #101010;
+}
+.ubi_subtitulo {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vh;
+  line-height: 3.4vh;
+  display: flex;
+  align-items: center;
+  color: #6a6a6a;
+}
+.btnrutas {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6vh;
+  line-height: 5vh;
+  background: #2176f0;
+  box-shadow: 0px 0px 16px rgba(33, 118, 240, 0.56);
+  border-radius: 34px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.mapcontainer {
+  box-sizing: border-box;
+  padding: 2vh;
+  background: #ffffff;
+  box-shadow: 0px 1px 25px 19px rgba(33, 118, 240, 0.05);
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}
+
+.card_ruta {
+  box-sizing: border-box;
+  padding: 2vh;
+  background: #ffffff;
+  box-shadow: 0px 1px 25px 19px rgba(33, 118, 240, 0.05);
+  border-radius: 10px;
+  margin-bottom: 5vh;
+  transition: 400ms;
+}
+
+.card_ruta:hover {
+  box-shadow: 0px 1px 25px 10px rgb(17, 77, 161);
+  transition: 500ms;
+  cursor: zoom-in;
+}
+
+.ru_titulo {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6vh;
+  line-height: 5vh;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+.imgruta {
+  border-radius: 10px;
+}
+.imglgruta {
+  border-radius: 10px;
+}
+.ru_customcontent {
+  background-color: #6a6a6a00;
+  border: none;
+}
+.ru_customheader {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3vh;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 2vh;
+}
 
 @media (max-width: 500px) {
-    .img-contacto{
-        width: 100%;
-    }
+  .img-contacto {
+    width: 100%;
+  }
 }
