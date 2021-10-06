@@ -2,44 +2,44 @@ const rutas = [
     {
       id: 'ruta1',
       titulo: "METRO",
-      img: "img/rutas/rutas_sm/metro.png",
-      imglg: "img/rutas/metro.jpg",
+      img: "../img/rutas/rutas_sm/metro.png",
+      imglg: "../img/rutas/metro.jpg",
     },
     {
       id: 'ruta2',
       titulo: "METROBÚS",
-      img: "img/rutas/rutas_sm/metrobus.png",
-      imglg: "img/rutas/metrobus.jpg",
+      img: "../img/rutas/rutas_sm/metrobus.png",
+      imglg: "../img/rutas/metrobus.jpg",
     },
     {
       id: 'ruta3',
       titulo: "TROLEBÚS",
-      img: "img/rutas/rutas_sm/trolebus.png",
-      imglg: "img/rutas/trolebus.jpg",
+      img: "../img/rutas/rutas_sm/trolebus.png",
+      imglg: "../img/rutas/trolebus.jpg",
     },
     {
       id: 'ruta4',
       titulo: "SUBURBANO",
-      img: "img/rutas/rutas_sm/suburbano.png",
-      imglg: "img/rutas/suburbano.jpg",
+      img: "../img/rutas/rutas_sm/suburbano.png",
+      imglg: "../img/rutas/suburbano.jpg",
     },
     {
       id: 'ruta5',
       titulo: "TREN LIGERO",
-      img: "img/rutas/rutas_sm/tren-ligero.png",
-      imglg: "img/rutas/tren-ligero.jpg",
+      img: "../img/rutas/rutas_sm/tren-ligero.png",
+      imglg: "../img/rutas/tren-ligero.jpg",
     },
     {
       id: 'ruta6',
       titulo: "CONEXIÓN BUENAVISTA",
-      img: "img/rutas/rutas_sm/conexion-buenavista.png",
-      imglg: "img/rutas/conexion-buenavista.jpg",
+      img: "../img/rutas/rutas_sm/conexion-buenavista.png",
+      imglg: "../img/rutas/conexion-buenavista.jpg",
     },
     {
       id: 'ruta7',
       titulo: "CONEXIONES SUBURBANO",
-      img: "img/rutas/rutas_sm/conexiones-suburbano.png",
-      imglg: "img/rutas/conexiones-suburbano.jpg",
+      img: "../img/rutas/rutas_sm/conexiones-suburbano.png",
+      imglg: "../img/rutas/conexiones-suburbano.jpg",
     },
   ];
   
@@ -49,7 +49,7 @@ const rutas = [
       `
         <div class="col-sm-12 col-md-4 col-lg-3">
             <div class="card_ruta">
-                <img data-bs-toggle="modal" href="#${ruta.id}" src=${ruta.img} alt="ruta metro" width="100%" class="imgruta">
+                <img data-bs-toggle="modal" href="#${ruta.id}" src=${ruta.img} alt="ruta metro" width="100%" class="../imgruta">
                 <div class="ru_titulo text-center">
                     ${ruta.titulo}
                 </div>
@@ -64,7 +64,7 @@ const rutas = [
                         
                     </div>
                     <div class="modal-body">
-                        <img src=${ruta.imglg} alt="${ruta.titulo}" width="100%" class="imglgruta">
+                        <img src=${ruta.imglg} alt="${ruta.titulo}" width="100%" class="../imglgruta">
                     </div>
                 </div>
             </div>
