@@ -1,0 +1,119 @@
+.sub1 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5vh;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+.titulo1 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6vh;
+  line-height: 7vh;
+  text-transform: uppercase;
+  color: #101010;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.sub2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5vh;
+  line-height: 3vh;
+  color: #a1aed4;
+}
+
+.card1 {
+  box-shadow: 0px 1px 25px 19px rgba(33, 118, 240, 0.05);
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 1vh;
+}
+
+.cardtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vh;
+  line-height: 2vh;
+  color: #000000;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.cardtext {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vh;
+  line-height: 1.9vh;
+  color: #000000;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.enlace {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 1.8vh;
+  color: #2176f0;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.cardtitleprincipal {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3vh;
+  line-height: 2vh;
+  color: #000000;
+  padding: 1.5rem;
+}
+.cardtextprincipal {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 142%;
+  color: #000000;
+  padding: 1.5rem;
+}
+.enlaceprincipal {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2vh;
+  color: #2176f0;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+.titulo-swiper {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #101010;
+  margin-top: -2vh;
+  margin-bottom: 1vh;
+}
+.enlace2 {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background: #2176f0;
+  box-shadow: 0px 0px 16px rgba(33, 118, 240, 0.56);
+  border-radius: 50px;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  margin-top: 1vh;
+}
