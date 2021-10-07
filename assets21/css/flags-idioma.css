@@ -1,0 +1,31 @@
+.btn-flotante {
+    background-color: #ffffff00;
+    padding: 1vh;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+  }
+
+  .btn-flotante:hover {
+    background-color: #ffffff00;
+  }
+  .flags{
+    transition: 300ms;
+    margin-bottom: 6px;
+    margin-right: 4px;
+  }
+  .flags:hover{
+    transition: 300ms;
+    transform: translateX(7px);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .btn-flotante {
+      left: 0;
+    }
+    .flags{
+      width: 70%;
+    }
+  }

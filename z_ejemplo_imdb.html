@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <span class="imdbRatingPlugin" data-user="ur139402096" data-title="tt2379713" data-style="p5"><a
+      href="https://www.imdb.com/title/tt2379713/?ref_=plg_rt_1"><img
+        src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" 007: Spectre
+    (2015) on IMDb" /> </a></span>
+  <script>
+    (function (d, s, id) {
+      var js,
+        stags = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src =
+        "https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";
+      stags.parentNode.insertBefore(js, stags);
+    })(document, "script", "imdb-rating-api");
+  </script>
+
+  <style>
+    .btn-flotante {
+      
+      border-radius: 5px;
+      /* Borde del boton */
+      
+      background-color: #ffffff00;
+      /* Color de fondo */
+      padding: 1vh;
+      /* Relleno del boton */
+      position: fixed;
+      left: 0;
+      top: 50%;
+      
+      transition: all 300ms ease 0ms;
+      
+      z-index: 99;
+    }
+
+    .btn-flotante:hover {
+      background-color: #ffffff;
+      /* Color de fondo al pasar el cursor */
+      
+      /* transform: translateX(7px); */
+    }
+    .flags{
+      transition: 300ms;
+      margin-bottom: 6px;
+    }
+    .flags:hover{
+      transition: 300ms;
+      transform: translateX(7px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      .btn-flotante {
+        left: 0;
+      }
+      .flags{
+        width: 70%;
+      }
+    }
+  </style>
+  <div class="btn-flotante">
+    <a href="#"><img class="flags" src="assets21/img/banderas/mx.png" alt=""></a> <br>
+    <a href="#"><img class="flags" src="assets21/img/banderas/usa.png" alt=""></a>
+  </div>
+
+</body>
+
+</html>
