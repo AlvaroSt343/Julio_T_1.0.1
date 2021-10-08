@@ -1,0 +1,43 @@
+.categoria,
+.cardP,
+.filtro1 {
+  background: #ffffff;
+  box-shadow: 0px 1px 25px 19px rgba(33, 118, 240, 0.05);
+  border-radius: 10px;
+}
+
+.fechatext {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+.fechaL {
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0.702666px 17.5667px 4.91866px rgba(33, 118, 240, 0.05);
+  border-radius: 7.02666px;
+  padding: 1vh;
+  width: auto;
+}
+.totalP {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #2176f0;
+}
+.listacategoria {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.2525px;
+  line-height: 22px;
+  color: #2e2e2e;
+  text-decoration: none;
+}
