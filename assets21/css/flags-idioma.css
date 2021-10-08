@@ -1,3 +1,4 @@
+/*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
 .titulopagina {
   box-sizing: border-box;
   position: absolute;
@@ -5,12 +6,14 @@
   font-style: normal;
   font-weight: bold;
   font-size: 3vw;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   top: 180px;
-  left: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
+/*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
+
 
 .btn-flotante {
   background-color: #ffffff00;
@@ -35,6 +38,7 @@
   transform: translateX(7px);
 }
 
+
 @media only screen and (max-width: 600px) {
   .btn-flotante {
     left: 0;
@@ -43,13 +47,36 @@
     width: 70%;
   }
 
+  /*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
   .titulopagina{
     top: 130px;
   }
+  /*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
 }
 
+
+/*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
 @media only screen and (max-width: 1200px) {
   .titulopagina{
     top: 130px;
   }
+}
+/*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
+
+@media only screen and (max-width: 500px) {
+  
+  /*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
+  .titulopagina{
+    margin-top: -4vw;
+  }
+  /*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
+}
+
+@media only screen and (max-width: 320px) {
+  
+  /*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
+  .titulopagina{
+    margin-top: -6vw;
+  }
+  /*se agrego aqui porque se comparte el mismo archivo para todas las paginas*/
 }
