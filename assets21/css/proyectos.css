@@ -10,7 +10,7 @@
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 23px;
   text-transform: uppercase;
   color: #101010;
@@ -66,6 +66,7 @@
 
 .proyectosimg{
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .minicard{
@@ -73,4 +74,27 @@
   box-shadow: 0px 0.702666px 17.5667px 4.91866px rgba(33, 118, 240, 0.05);
   border-radius: 7.02666px;
   padding: 1vh;
+}
+
+.custom-mp-select{
+  border: none;
+  text-decoration: none;
+  outline:none;
+}
+.custom-mp-select::-webkit-scrollbar {
+  display: none;
+}
+.custom-mp-select option{
+  cursor:pointer;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight:bold;
+  font-size: 13.2525px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 4px;
+}
+
+.custom-mp-select option:hover{
+    color: #2176f0;
 }
