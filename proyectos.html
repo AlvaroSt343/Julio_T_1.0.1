@@ -139,17 +139,24 @@
        <div class="container">
             <div class="row d-flex justify-content-center my-5">
                 <!-- categorias -->
-                <div class="col-sm-12 col-md-3">
+                <div class="col-sm-12 col-md-3 mb-3">
                     <div class="categoria p-4">
-                        <label for="fechaL" class="fechatext">Fecha de lanzamiento:</label>
-                        <input class="fechaL my-2" type="date" name="fechaL" id="">
+                        <label for="fechaL" class="fechatext mb-3">Fecha de lanzamiento:</label>
+                        <div class="input-group mb-5">
+                            <input type="date" class="form-control fechaL" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                          </div>
                         <div class="fechatext my-3">
                             Categorias
                         </div>
-                        <div class="listacategoria">
-                            <a href="">Peliculas</a> <br>
-                            <a href="">Cortometrajes</a> <br>
-                            <a href="">Series</a>
+                        <div class="listacategoria" >
+                            <select class="form-select" multiple aria-label="multiple select example" id="categoria" onchange="ejceutar()">
+                                <option value="7110578">One</option>
+                                <option value="7110838">Two</option>
+                                <option value="7110839">Three</option>
+                            </select>
+                            <!-- <button type="button" id="categoria" value="7110578" onclick="ejceutar()"> Peliculas</button> <br>
+                            <button type="button" id="categoria" value="7110838" onclick="ejceutar()"> Cortometrajes</button> <br>
+                            <button type="button" id="categoria" value="7110839" onclick="ejceutar()"> Series</button> <br> -->
                         </div>
                     </div>
                 </div>
@@ -158,61 +165,32 @@
                         <div class="col-12 mb-3">
                             <div class="filtro1 p-4">
                                 <div class="row">
-                                    <div class="col-sm-12 col-md-8">
-                                        <div class="totalP ">Total de peliculas encontradas:</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="totalP mb-sm-2">Total de peliculas encontradas:</div>
                                     </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="form-select form-select-sm customselect" aria-label=".form-select-lg example" aria-placeholder="Ordenar por">
-                                            <option value="1">A-Z</option>
-                                            <option value="2">Z-A</option>
-                                            <option value="3">Fecha</option>
-                                        </select>
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="input-group">
+                                            <div class="orden mx-3"><strong>Ordenar por:</strong></div>
+                                            <select id="select" class="form-select form-select-sm customselect" aria-label=".form-select-lg example" aria-placeholder="Ordenar por" onchange="ejceutar()">
+                                                <option value="title.asc" >A-Z</option>
+                                                <option value="title.desc" >Z-A</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    
+                    <!-- RESULTADO DE API TMDB -->
+                    <div class="row" id="proyectos">
                         <!-- Peliculas -->
-                        <div class="col-sm-12 col-md-6">
-                            <div class="cardP p-4">
-                                <img src="assets21/img/proyectos/ejemplo.png" alt="james bond" width="100%">
-                                <div class="titulo">
-                                    James Bond 007
-                                </div>
-                                <div class="calificacion">
-                                    mdb 10/10
-                                </div>
-                                <div class="director">
-                                    Director:
-
-                                </div>
-                                <div class="lanzamiento">
-
-                                </div>
-                            </div>
-                        </div>
                         <!-- Peliculas -->
-                        <div class="col-sm-12 col-md-6">
-                            <div class="cardP p-4">
-                                <img src="assets21/img/proyectos/ejemplo.png" alt="james bond" width="100%">
-                                <div class="titulo">
-                                    James Bond 007
-                                </div>
-                                <div class="calificacion">
-                                    mdb 10/10
-                                </div>
-                                <div class="director">
-                                    Director:
-
-                                </div>
-                                <div class="lanzamiento">
-
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Peliculas -->
                         <!-- Peliculas -->
                     </div>
+                    <!-- RESULTADO DE API TMDB -->
+
                 </div>
             </div>
        </div>
