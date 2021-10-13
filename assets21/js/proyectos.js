@@ -25,12 +25,12 @@ function ejceutar() {
                 <div class="col-sm-12 col-md-6 mb-3">
                     <div class="cardP p-4">
                         
-                        
+                        <a href="proyectosview.html?id=${resultado.id}">
                         <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path?resultado.backdrop_path:resultado.poster_path}" 
                          alt="poster de pelicula" 
                          width="100%"
-                         onclick="${resultado.id}"
                         />
+                        </a>
                         <div class="titulo">
                             ${resultado.name ? resultado.name : resultado.title}
                         </div>
