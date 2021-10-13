@@ -1,17 +1,30 @@
 function ejceutar() {
   let categoria = document.querySelector("#categoria").value;
   let selected = document.querySelector("#select").value;
+  let tipo;
+
 
   if (categoria == "") {
     categoria = "7110578";
   }
 
-  const url =
-    "https://api.themoviedb.org/4/list/" +
-    categoria +
-    "?page=1&api_key=15c78749fb202cfe47bdd8f4989396e2&language=es&sort_by=" +
-    selected +
-    "";
+
+  switch (categoria) {
+    case "7110578":
+      tipo = "proyectosview.html" //peliculas
+      break;
+    case "7110839":
+      tipo = "proyectosview.html" //cortos
+      break;
+    case "7110838":
+      tipo = "proyectosviewseries.html" //series de tv
+      break;
+    default:
+      tipo = "proyectosview.html" //peliculas
+      break;
+  }
+  console.log(tipo);
+  const url = "https://api.themoviedb.org/4/list/" + categoria + "?page=1&api_key=15c78749fb202cfe47bdd8f4989396e2&language=es&sort_by=" + selected +"";
 
   fetch(url)
     .then((rest) => rest.json())
@@ -25,7 +38,7 @@ function ejceutar() {
                 <div class="col-sm-12 col-md-6 mb-3">
                     <div class="cardP p-4">
                         
-                        <a href="proyectosview.html?id=${resultado.id}">
+                        <a href="${tipo}?id=${resultado.id}">
                         <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path?resultado.backdrop_path:resultado.poster_path}" 
                          alt="poster de pelicula" 
                          width="100%"
