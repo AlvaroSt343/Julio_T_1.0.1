@@ -47,7 +47,7 @@ const rutas = [
   agregar.innerHTML = rutas.map(
     (ruta) =>
       `
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-6">
             <div class="card_ruta">
                 <img data-bs-toggle="modal" href="#${ruta.id}" src=${ruta.img} alt="ruta metro" width="100%" class="../imgruta">
                 <div class="ru_titulo text-center">
