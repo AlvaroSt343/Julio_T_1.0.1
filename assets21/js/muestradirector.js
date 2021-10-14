@@ -6,7 +6,6 @@ const url33 =
 fetch(url33)
   .then((rest) => rest.json())
   .then((json) => {
-    console.log(json.crew);
     const agregar = document.querySelector("#director");
     agregar.innerHTML=
       `

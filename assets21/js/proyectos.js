@@ -23,7 +23,7 @@ function ejceutar() {
       tipo = "proyectosview.html" //peliculas
       break;
   }
-  console.log(tipo);
+
   const url = "https://api.themoviedb.org/4/list/" + categoria + "?page=1&api_key=15c78749fb202cfe47bdd8f4989396e2&language=es&sort_by=" + selected +"";
 
   fetch(url)
@@ -37,11 +37,10 @@ function ejceutar() {
             `
                 <div class="col-sm-12 col-md-6 mb-3">
                     <div class="cardP p-4">
-                        
                         <a href="${tipo}?id=${resultado.id}">
-                        <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path?resultado.backdrop_path:resultado.poster_path}" 
-                         alt="poster de pelicula" 
-                         width="100%"
+                        <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path ? resultado.backdrop_path : resultado.poster_path}" 
+                        alt="poster de pelicula" 
+                        width="100%"
                         />
                         </a>
                         <div class="titulo">
@@ -66,7 +65,7 @@ function ejceutar() {
                             Lanzamiento: <strong style="color: #101010;">${
                               resultado.release_date
                                 ? resultado.release_date
-                                : ""
+                                : "?"
                             }</strong>
                         </div>
                     </div>

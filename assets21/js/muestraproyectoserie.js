@@ -6,7 +6,7 @@ const url22 = "https://api.themoviedb.org/3/tv/" + valor + "?api_key=15c78749fb2
 fetch(url22)
   .then((rest) => rest.json())
   .then((json) => {
-    console.log(json);
+    
     const agregar = document.querySelector("#proyectos");
     agregar.innerHTML=
       `
@@ -64,7 +64,9 @@ fetch(url22)
                           </div>
                       </div>
                       <div class="tab-pane fade my-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">                                    
-                          Aun no tenemos reseñas de ${json.title ? json.title :json.name}
+                        <div class="row" id="resenas">
+                            <!--se agrega las reseñas a partir del id, en archivo js-->
+                        </div>
                       </div>
                   </div>
               </div>

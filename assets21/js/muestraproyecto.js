@@ -6,7 +6,6 @@ const url22 = "https://api.themoviedb.org/3/movie/" + valor + "?api_key=15c78749
 fetch(url22)
   .then((rest) => rest.json())
   .then((json) => {
-    console.log(json);
     const agregar = document.querySelector("#proyectos");
     agregar.innerHTML=
       `
@@ -43,7 +42,7 @@ fetch(url22)
               </div>
               <div class="col-sm-12 col-md-12 col-lg-9 mb-2">
                   ${json.spoken_languages.map(
-                    lenguajes=>(lenguajes.english_name)
+                    lenguajes=>(lenguajes.name)
                   )}
               </div>
               <div class="col-12 my-5">
@@ -64,7 +63,9 @@ fetch(url22)
                           </div>
                       </div>
                       <div class="tab-pane fade my-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">                                    
-                          Aun no tenemos reseñas de ${json.title}
+                          <div class="row" id="resenas">
+                            <!--se agrega las reseñas a partir del id, en archivo js-->
+                          </div>
                       </div>
                   </div>
               </div>

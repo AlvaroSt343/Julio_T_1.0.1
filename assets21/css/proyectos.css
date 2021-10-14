@@ -67,6 +67,7 @@
 .proyectosimg{
   border-radius: 10px;
   cursor: pointer;
+  max-height: 24.5vh;
 }
 
 .minicard{

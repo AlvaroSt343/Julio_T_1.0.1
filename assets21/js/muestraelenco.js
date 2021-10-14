@@ -6,7 +6,6 @@ const url44 =
 fetch(url44)
   .then((rest) => rest.json())
   .then((json) => {
-    console.log(json.cast);
     const agregar = document.querySelector("#elenco");
     agregar.innerHTML=
       `
