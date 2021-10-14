@@ -20,7 +20,7 @@ fetch(url55)
             </div>
             <div class="col-12">
                 <div class="resena-contenido mb-3">
-                    ${resena.content.slice(0,200)} <br />
+                    ${resena.content.slice(0,200)} ... <br />
                     <a class="verenlace" target="_blank" href="${resena.url}">Ver más...</a>
                 </div>                
             </div>
