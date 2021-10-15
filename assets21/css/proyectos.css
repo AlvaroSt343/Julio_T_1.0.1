@@ -67,7 +67,21 @@
 .proyectosimg{
   border-radius: 10px;
   cursor: pointer;
-  max-height: 24.5vh;
+  overflow: hidden;
+}
+
+.imagenfija{
+  border-radius: 10px;
+  height: 240px;
+	overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .imagenfija{
+
+    height: 180px;
+    
+  }
 }
 
 .minicard{
