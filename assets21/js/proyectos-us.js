@@ -37,14 +37,36 @@ function ejceutar(page) {
             `
                 <div class="col-sm-12 col-md-6 mb-3">
                     <div class="cardP p-4">
-                        <div class="imagenfija">
-                          <a href="${tipo}?id=${resultado.id}">
-                          <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path ? resultado.backdrop_path : resultado.poster_path}" 
+                    <div class="imagenfija">
+                    ${resultado.backdrop_path ?
+                      `
+                        <a href="${tipo}?id=${resultado.id}">
+                          <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path}" 
                           alt="poster de pelicula" 
                           width="100%"
                           />
-                          </a>
-                        </div>
+                        </a>
+                        `
+                      : resultado.poster_path ?
+                      `
+                        <a href="${tipo}?id=${resultado.id}">
+                          <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.poster_path}" 
+                          alt="poster de pelicula" 
+                          width="100%"
+                          />
+                        </a>
+                      `
+                      :
+                      `
+                        <a href="${tipo}?id=${resultado.id}">
+                          <img class="proyectosimg" src="/assets21/img/no-film.png" 
+                          alt="poster de pelicula" 
+                          width="100%"
+                          />
+                        </a>
+                        `
+                    }         
+                  </div>
                         <div class="titulo">
                             ${resultado.name ? resultado.name : resultado.title}
                         </div>

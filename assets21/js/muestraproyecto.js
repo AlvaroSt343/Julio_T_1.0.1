@@ -10,7 +10,16 @@ fetch(url22)
     agregar.innerHTML=
       `
       <div class="col-sm-12 col-md-5 mb-3">
-          <img class="imgview" src="https://image.tmdb.org/t/p/w500${json.poster_path}" alt="imagen" width="100%">
+            ${json.poster_path?
+            `
+                <img class="imgview" src="https://image.tmdb.org/t/p/w500${json.poster_path}" alt="imagen" width="100%"></img>
+            `
+            :
+            `
+                <img class="imgview" src="/assets21/img/no-film-full.png" alt="imagen" width="100%"></img>
+            `
+            }
+          
       </div>
       <div class="col-sm-12 col-md-7">
           <div class="row contenido p-3">
