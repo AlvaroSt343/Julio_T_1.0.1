@@ -1,8 +1,7 @@
-function ejceutar() {
+function ejceutar(page) {
   let categoria = document.querySelector("#categoria").value;
   let selected = document.querySelector("#select").value;
   let tipo;
-
 
   if (categoria == "") {
     categoria = "7110578";
@@ -24,12 +23,13 @@ function ejceutar() {
       break;
   }
 
-  const url = "https://api.themoviedb.org/4/list/" + categoria + "?page=1&api_key=15c78749fb202cfe47bdd8f4989396e2&sort_by=" + selected +"";
-
+  const url = "https://api.themoviedb.org/4/list/" + categoria + "?page="+ page +"&api_key=15c78749fb202cfe47bdd8f4989396e2&sort_by=" + selected +"";
+  
   fetch(url)
     .then((rest) => rest.json())
     .then((json) => {
       const resultados = json.results;
+
       const agregar = document.querySelector("#proyectos");
       agregar.innerHTML = resultados
         .map(
@@ -37,12 +37,14 @@ function ejceutar() {
             `
                 <div class="col-sm-12 col-md-6 mb-3">
                     <div class="cardP p-4">
-                        <a href="${tipo}?id=${resultado.id}">
-                        <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path ? resultado.backdrop_path : resultado.poster_path}" 
-                        alt="movie poster" 
-                        width="100%"
-                        />
-                        </a>
+                        <div class="imagenfija">
+                          <a href="${tipo}?id=${resultado.id}">
+                          <img class="proyectosimg" src="https://image.tmdb.org/t/p/w500${resultado.backdrop_path ? resultado.backdrop_path : resultado.poster_path}" 
+                          alt="poster de pelicula" 
+                          width="100%"
+                          />
+                          </a>
+                        </div>
                         <div class="titulo">
                             ${resultado.name ? resultado.name : resultado.title}
                         </div>
@@ -74,7 +76,7 @@ function ejceutar() {
             `
         )
         .join("");
+        paginacion();
     });
 }
 
-ejceutar();
