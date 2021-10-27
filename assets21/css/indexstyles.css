@@ -209,6 +209,14 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+
+
+.modalcustomvideo{
+  background-color: #2177f000;
+  border: none;
+}
+
 @media (max-width: 1199px) {
   .btnespecial{
     margin-top: -250px;
