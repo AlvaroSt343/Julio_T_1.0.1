@@ -22,7 +22,7 @@ fetch(url44)
                           `
                         : 
                           `
-                          <img class="imgview mb-3" src="assets21/img/default-1.jpg" alt="" width="100%">
+                          <img class="imgview mb-3" src="assets21/img/default-1.webp" alt="" width="100%">
                           `
                         }  
 

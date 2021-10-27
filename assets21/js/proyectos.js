@@ -59,7 +59,7 @@ function ejceutar(page) {
                             :
                             `
                               <a href="${tipo}?id=${resultado.id}">
-                                <img class="proyectosimg" src="/assets21/img/no-film.png" 
+                                <img class="proyectosimg" src="/assets21/img/no-film.webp" 
                                 alt="poster de pelicula" 
                                 width="100%"
                                 />
@@ -73,7 +73,7 @@ function ejceutar(page) {
                         <div class="calificacion mb-3">
                             <div class="input-group">
                                 <div class="minicard">    
-                                    <img src="/assets21/img/swiper-slider/imdb.png" alt="" /> <strong>${
+                                    <img src="/assets21/img/swiper-slider/imdb.webp" alt="" /> <strong>${
                                       resultado.vote_average
                                     }</strong>/10
                                 </div>

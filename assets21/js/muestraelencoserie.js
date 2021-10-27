@@ -18,11 +18,11 @@ fetch(url44)
                         ${
                           actor.profile_path ?
                           `
-                          <img class="imgview mb-3" src="https://image.tmdb.org/t/p/w500/${actor.profile_path}" alt="" width="100%">
+                          <img class="imgview mb-3" src="https://image.tmdb.org/t/p/w500/${actor.profile_path}" alt="zzz" width="100%">
                           `
                         : 
                           `
-                          <img class="imgview mb-3" src="assets21/img/default-1.jpg" alt="" width="100%">
+                          <img class="imgview mb-3" src="../assets21/img/default-1.webp" alt="zzz" width="100%">
                           `
                         }  
 
