@@ -270,8 +270,15 @@
     
             <div class="row d-flex justify-content-center">
                 <div class="col-12 text-center">
-                    <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/HDaVWDuF9sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="mustravideo">
+                        <center>
+                            <img src="../assets21/img/videojulio.webp" alt="" width="100%">
+                        </center>
+                        <div class="btnespecial">
+                            <button onclick="prueba();" class="btn-play" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="bi bi-play-btn-fill" style="color: red; font-size: 40px;"></i></button>
+                        </div>
+                        <div class="ejemplo" id="xxd">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -560,13 +567,19 @@
 
 
 
-    <!-- pop up WhatsApp -->
+    
+    <script>
+        $('#modalElement').on('hidden', function(){
+            $(this).data('modal', null);
+        });
+    </script>
     
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../assets21/js/swiper-slider.js"></script>
     <!-- imdb plugin -->
     <script src="../assets21/js/imdb.js"></script>
+    <script src="../assets21/js/muestra-video.js"></script>
 
     
 
