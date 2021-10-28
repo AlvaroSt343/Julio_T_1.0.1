@@ -1,0 +1,13 @@
+.whats-popup{
+    position:fixed;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    margin: 16px;
+    transition: 100ms;
+}
+.whats-popup:hover{
+    right: 5px;
+    bottom: 5px;
+    transition: 100ms;
+}

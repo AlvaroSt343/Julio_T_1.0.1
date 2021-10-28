@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     
-        
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5707329-1"></script>
     <script>
@@ -16,7 +14,6 @@
         gtag('config', 'UA-5707329-1');
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -40,20 +37,24 @@
     <link rel="stylesheet" href="assets21/css/slider.css">
     <link rel="stylesheet" href="assets21/css/videoresponsive.css">
     <link rel="stylesheet" href="assets21/css/flags-idioma.css">
+    <link rel="stylesheet" href="assets21/css/wapp.css">
     
     <!--ICONS bootstrap5-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <!--WhatsApp pop up -->
-    <script type="text/javascript" src="assets21/js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="assets21/js/floating-wpp.css">
-    <script type="text/javascript" src="assets21/js/floating-wpp.js"></script>
-    <link rel="stylesheet" href="assets21/css/floating-wpp.min.css">
-
-
     <title>Julio Toledo | Home</title>
 </head>
 <body>
+    <!-- whats app pop up -->
+    <a href="https://api.whatsapp.com/send?phone=5215563269449&text=¡Hola!%2C%20¿pueden%20ayudarme%3F"
+        class="whats-popup"
+        target="_blank">
+        <img src="assets21/img/wapp-logo.webp" 
+        alt="logo-whats app" 
+        width="55px">
+    </a>
+    <!-- whats app pop up -->
+    
     <!-- banderas de idioma -->
     <div class="btn-flotante">
         <a href="index.html"><img class="flags" src="assets21/img/banderas/mx.png" alt=""></a> <br>
@@ -271,7 +272,7 @@
 
 
         <!--SECCION 2-->
-        <section onscroll="prueba();">
+        <section>
             <div class="row d-flex justify-content-center mt-5">
                 <div class="col-12 text-center p-5">
                     <div class="sub1">
@@ -290,12 +291,9 @@
     
             <div class="row d-flex justify-content-center">
                 <div class="col-12 text-center">
-                    <!-- <div class="video-responsive">
-                        <iframe src="https://www.youtube.com/embed/HDaVWDuF9sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div> -->
                     <div class="mustravideo">
                         <center>
-                            <img src="/assets21/img/videojulio.png" alt="" width="100%">
+                            <img src="assets21/img/videojulio.png" alt="" width="100%">
                         </center>
                         <div class="btnespecial">
                             <button onclick="prueba();" class="btn-play" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="bi bi-play-btn-fill" style="color: red; font-size: 40px;"></i></button>
@@ -599,8 +597,6 @@
         });
     </script>
 
-    <!-- pop up WhatsApp -->
-    <script src="assets21/js/config-whats.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets21/js/swiper-slider.js"></script>
